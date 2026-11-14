@@ -85,3 +85,6 @@ desktop.ini
 *.db
 *.pid
 *.seed
+
+# 下钻引擎本地测试编译产物
+dist-test/

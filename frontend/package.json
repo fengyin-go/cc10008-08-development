@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node -e \"require('fs').writeFileSync('dist-test/package.json', JSON.stringify({type:'commonjs'}))\" && node --test \"dist-test/**/*.test.js\""
   },
   "dependencies": {
     "react": "^18.3.1",
